@@ -1,0 +1,23 @@
+Để gigalixir chạy ứng dụng của bạn từ mã nguồn được lưu trữ trên Github, bạn cần thực hiện các bước sau:
+
+Tạo một ứng dụng Gigalixir bằng cách đăng nhập vào tài khoản Gigalixir của bạn và sử dụng lệnh gigalixir create để tạo mới một ứng dụng trên nền tảng.
+
+Tạo một kho lưu trữ mới trên Github để chứa mã nguồn của ứng dụng của bạn.
+
+Clone kho lưu trữ của bạn từ Github về máy tính của bạn bằng cách sử dụng lệnh git clone.
+
+Sao chép toàn bộ mã nguồn của ứng dụng của bạn vào thư mục mà bạn vừa tải về từ Github.
+
+Sử dụng lệnh git add . để thêm tất cả các tệp mới vào kho lưu trữ.
+
+Sử dụng lệnh git commit -m "Initial commit" để thêm một commit mới vào kho lưu trữ.
+
+Sử dụng lệnh git push để đẩy mã nguồn của ứng dụng lên Github.
+
+Truy cập vào trang quản lý ứng dụng Gigalixir và chọn ứng dụng mà bạn vừa tạo ở bước 1. Chọn tab "Deployments" và kết nối tài khoản Github của bạn với tài khoản Gigalixir của bạn.
+
+Chọn kho lưu trữ mà bạn vừa tạo ở bước 2 và chọn branch mà bạn muốn triển khai ứng dụng của mình.
+
+Nhấn nút "Deploy" và chờ đợi cho đến khi Gigalixir hoàn tất quá trình triển khai.
+
+Sau khi quá trình triển khai hoàn tất, bạn có thể truy cập vào ứng dụng của mình trên Gigalixir và kiểm tra xem nó đã chạy đúng với mã nguồn từ Github của bạn chưa.

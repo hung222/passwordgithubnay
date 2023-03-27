@@ -1,0 +1,13 @@
+Mở tập tin settings.py của Django và thêm django.middleware.csrf.CsrfViewMiddleware vào MIDDLEWARE.
+
+Thêm mã sau vào tập tin HTML của bạn:
+
+php
+Copy code
+<form method="post">
+  {% csrf_token %}
+  <!-- form inputs here -->
+  <input type="submit" value="Submit">
+</form>
+Lưu lại tập tin và khởi động lại host.
+Nếu bạn thực hiện các bước trên, lỗi CSRF sẽ được sửa đổi và bạn sẽ có thể đăng nhập vào trang quản trị admin của bạn mà không gặp bất kỳ sự cố nào.

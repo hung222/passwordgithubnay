@@ -1,0 +1,20 @@
+Nếu bạn đã clone buildpacks Laravel vào thư mục app của dự án Laravel của bạn trong thư mục Giga, thì bạn đã chuẩn bị một số phần cần thiết để triển khai ứng dụng Laravel của mình trên Giga. Tuy nhiên, để cài đặt Laravel trên Giga, bạn cần thực hiện các bước sau:
+
+Đảm bảo rằng bạn đã cài đặt gigalixir-cli trên máy tính của mình bằng cách chạy lệnh pip install gigalixir.
+
+Đăng nhập vào tài khoản Giga của bạn trên CLI bằng cách chạy lệnh gigalixir login.
+
+Tạo một ứng dụng trên Giga bằng lệnh gigalixir create.
+
+Liên kết ứng dụng Giga của bạn với kho lưu trữ Git của bạn bằng cách chạy lệnh gigalixir git:remote -a <app-name>.
+
+Thiết lập biến môi trường của ứng dụng Laravel của bạn trên Giga bằng cách chạy lệnh gigalixir config:set KEY=VALUE. Bạn cần đặt các giá trị sau:
+
+APP_KEY: Chìa khóa ứng dụng Laravel của bạn.
+APP_ENV: Chế độ môi trường của ứng dụng Laravel của bạn (production, development, hoặc testing).
+DATABASE_URL: URL của cơ sở dữ liệu PostgreSQL của Giga cho ứng dụng của bạn.
+Thiết lập buildpacks cho ứng dụng của bạn bằng cách chạy lệnh gigalixir buildpacks:set https://github.com/heroku/heroku-buildpack-php.git#v219 -a <app-name>. Đây là buildpack PHP được sử dụng để triển khai ứng dụng Laravel trên Giga.
+
+Push mã nguồn của bạn lên Giga bằng cách chạy lệnh git push gigalixir master. Nếu bạn đang sử dụng nhánh khác, hãy thay master bằng tên nhánh của bạn.
+
+Sau khi hoàn thành các bước trên, Giga sẽ tự động triển khai ứng dụng Laravel của bạn. Bạn có thể kiểm tra trạng thái triển khai bằng lệnh gigalixir logs -a <app-name>.

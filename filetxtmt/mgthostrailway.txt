@@ -1,0 +1,15 @@
+Tôi sẽ giúp bạn giải thích các bước để di chuyển một ứng dụng Django trên Railway.app:
+
+Tạo một tài khoản trên Railway.app và tạo một dự án mới.
+
+Tải lên các tập tin và tài nguyên của ứng dụng cũ của bạn vào dự án mới.
+
+Sửa đổi các tập tin cấu hình liên quan đến cấu hình máy chủ, cơ sở dữ liệu và các tập tin cấu hình khác để phù hợp với môi trường máy chủ mới của bạn.
+
+Tạo một bản sao của cơ sở dữ liệu và chuyển nó sang máy chủ mới.
+
+Chạy các lệnh Django để cập nhật cơ sở dữ liệu và chạy lại các test để chắc chắn rằng tất cả chức năng hoạt động tốt.
+
+Deploy dự án và kiểm tra tại địa chỉ URL của dự án mới.
+
+Lưu ý rằng các bước trên chỉ là tổng quát và có thể cần thêm hoặc sửa đổi tùy theo cấu hình của dự án của bạn.

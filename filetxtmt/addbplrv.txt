@@ -1,0 +1,14 @@
+Xin lỗi vì tôi đã không nhận ra rằng bạn đang nói tiếng Việt. Để đặt buildpack cho một ứng dụng PHP trên Gigalixir, bạn có thể chạy lệnh sau:
+
+shell
+Copy code
+$ gigalixir config:set BUILDPACK_URL=https://github.com/heroku/heroku-buildpack-php.git
+Lệnh này sẽ đặt buildpack cho ứng dụng hiện tại thành buildpack chính thức của Heroku cho PHP. Bạn có thể thay thế URL bằng URL của buildpack mà bạn muốn sử dụng.
+
+Sau khi bạn đã đặt buildpack, bạn có thể triển khai ứng dụng của mình như bình thường. Nếu bạn vẫn gặp vấn đề, bạn có thể kiểm tra tài liệu hoặc tài nguyên hỗ trợ của Gigalixir để biết thêm thông tin về cách đặt buildpack cho ứng dụng của bạn.
+
+
+
+
+
+Regenerate response
